@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanitySuite" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.mPulse.listeners.AnnotationTransformer"></listener>
+	</listeners>
+
+	<test name="Test1">
+		<parameter name="browser" value="chrome" />
+		<groups>
+			<run>
+				<include name="SegmentProfileDateTriggerTest" />
+				<include name="event" />
+				<include name="audiencepostapitestrun" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.mPulse.testCases" />
+		</packages>
+	</test>
+
+	<test name="Test2">
+		<parameter name="browser" value="chrome2" />
+		<groups>
+			<run>
+				<include name="MultiSegmentProfileDateTriggerTest" />
+				<include name="linktracking" />
+				<include name="updateapi" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.mPulse.testCases" />
+		</packages>
+	</test>
+	
+	<test name="Test3">
+		<parameter name="browser" value="chrome3" />
+		<groups>
+			<run>
+				<include name="csvupload" />
+				<include name="moandar" />
+				<include name="englishspanishmt" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.mPulse.testCases" />
+		</packages>
+	</test>
+
+</suite> <!-- Suite -->

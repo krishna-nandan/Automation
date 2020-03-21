@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [SanitySuite]" parallel="tests">
+  <test thread-count="1" name="DemoTest1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="unsubapi2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.mPulse.testCases.AudienceUnSubAPITest">
+        <methods>
+          <include name="endSuite"/>
+          <include name="endTest"/>
+          <include name="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub"/>
+          <include name="startSuite"/>
+          <include name="startTest"/>
+          <include name="endMethod"/>
+          <include name="startMethod"/>
+        </methods>
+      </class> <!-- com.mPulse.testCases.AudienceUnSubAPITest -->
+    </classes>
+  </test> <!-- DemoTest1(failed) -->
+</suite> <!-- Failed suite [SanitySuite] -->

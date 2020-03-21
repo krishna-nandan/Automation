@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SanitySuite">
+              <span class="suite-name border-passed">SanitySuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SanitySuite">
+                    <span>unitTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SanitySuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SanitySuite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SanitySuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SanitySuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SanitySuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SanitySuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SanitySuite" class="hide-methods passed suite-SanitySuite"> (hide)</a> <!-- hide-methods passed suite-SanitySuite -->
+                      <a href="#" panel-name="suite-SanitySuite" class="show-methods passed suite-SanitySuite"> (show)</a> <!-- show-methods passed suite-SanitySuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SanitySuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanitySuite" title="com.mPulse.testCases.AudienceUnSubAPITest" hash-for-method="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub">Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SanitySuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SanitySuite" class="panel SanitySuite">
+          <div class="suite-SanitySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mPulse.testCases.AudienceUnSubAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub">
+                  </a> <!-- Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub -->
+                  <span class="method-name">Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanitySuite-class-passed -->
+        </div> <!-- panel SanitySuite -->
+        <div panel-name="test-xml-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/unitTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SanitySuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;DemoTest1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;unsubapi2&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.mPulse.testCases&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mPulse.testCases.DeleteMemberAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.EventUploadAPI_V2Test&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.GridDemo&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.MOandARsTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.EnglishAndSpanishMTTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.MembersCSVUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudienceReSubAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.BrowserStackTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudienceSubAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.MultiSegmentProfileDateTriggerTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.SMSLinkTrackingTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.Test&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudienceUnSubAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.UnitTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudienceUpsertAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.BaseTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudienceUpdateAPITest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.MemberApiTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.SegmentProfileDateTriggerTest&quot;/&gt;
+      &lt;class name=&quot;com.mPulse.testCases.AudiencePostAPITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DemoTest1 --&gt;
+&lt;/suite&gt; &lt;!-- SanitySuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SanitySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">DemoTest1 (20 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SanitySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">unsubapi2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SanitySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SanitySuite');
+function tableData_SanitySuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub')
+data.setCell(0, 2, 'com.mPulse.testCases.AudienceUnSubAPITest')
+data.setCell(0, 3, 15590);
+window.suiteTableData['SanitySuite']= { tableData: data, tableDiv: 'times-div-SanitySuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-SanitySuite">
+              </div> <!-- times-div-SanitySuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SanitySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">286 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.MOandARsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_that_user_recieved_stop_AR_of_list_and_gets_unsubscribed_from_that_list_from_which_he_or_she_recieved_last_mt</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_gets_spanish_MO_on_sending_spanish_Help_MO_keyword_AYUDA</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_send_yes_user_gets_subscribed_and_receive_welcome_AR</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_send_help_MO_and_user_receive_shortcode_help_AR</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_send_help_MO_after_subscription_in_list_and_user_receive_list_help_AR</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_get_Opt_out_message_by_sending_spanish_keyword_ALTO_from_which_he_or_she_recieved_last_mt</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_send_list_keyword_and_user_receive_confirmed_opt_in_AR</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_recieved_stopall_AR_and_gets_unsubscribed_from_all_lists_and_added_to_GPRL</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_receive_MT_on_profile_update_by_OM_if_have_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_user_get_Opt_in_message_by_sending_spanish_keyword_SI</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.GridDemo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testdemo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudienceUnSubAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_user_can_unsubscribe_existing_subscribed_member_in_all_channels_in_single_request_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_unsubscribe_existing_subscribed_member_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_unsubscribe_existing_subscribed_member_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_unsubscribe_existing_subscribed_member_in_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.MemberApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getMemberData</span>
+                <br/>
+                <span class="ignored-method-name">createNewMember</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.MembersCSVUploadTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_that_confirm_opt_in_message_is_received_on_CSV_import_for_Email</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_SMS_on_joining_the_list_from_CSV_import_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_SMS_on_joining_the_list_from_CSV_import_after_confirm_Opt_in</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_the_new_valid_phone_number_merge_with_existing_email_member</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_User_Can_Mapp_All_Fields_using_with_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_the_new_valid_email_merge_with_existing_phone_number_member</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_User_Can_Mapp_All_Fields_using_comma_delimited_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_SMS_on_joining_the_list_from_CSV_import_after_confirm_Opt_in_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_EMAIL_on_joining_the_list_from_CSV_import_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_confirm_opt_in_message_is_received_on_CSV_import_for_SMS_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_confirm_opt_in_message_is_received_on_CSV_import_for_Email_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_with_footer_message_is_received_for_EMAIL_on_joining_the_list_from_CSV_import_after_confirm_Opt_in</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_the_new_valid_phone_number_merge_with_existing_appmail_member</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_confirm_opt_in_message_is_received_on_CSV_import_for_SMS</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_with_footer_message_is_received_for_EMAIL_on_joining_the_list_from_CSV_import_after_confirm_Opt_in_using_pipe_delimiter_CSV</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_SMS_on_joining_the_list_from_CSV_import</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_Unsubscribe_Link_in_Email_is_working</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_welcome_message_is_received_for_EMAIL_on_joining_the_list_from_CSV_import</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.SMSLinkTrackingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_subscription_preferences_deeplink_feature_for_SMS</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_reserved_characters_should_work_when_used_properly_in_link_when_shortened</span>
+                <br/>
+                <span class="ignored-method-name">Verify_links_with_http_and_https_types</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verfiy_if_custom_field_has_a_link_in_it_and_used_as_token</span>
+                <br/>
+                <span class="ignored-method-name">Verify_secure_message_deeplink_feature_for_Email</span>
+                <br/>
+                <span class="ignored-method-name">Verify_links_get_opened_and_count_increase_under_link_click_section_on_reporting_page</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_redirectional_URL_end_to_end</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_URLs_containing_percentile_sign_should_work_properly_when_shortened</span>
+                <br/>
+                <span class="ignored-method-name">Verify_subscription_preferences_deeplink_feature_for_Email</span>
+                <br/>
+                <span class="ignored-method-name">Verify_secure_message_deeplink_feature_for_SMS</span>
+                <br/>
+                <span class="ignored-method-name">Verify_user_can_click_on_links_recieved_at_sms_devices</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_user_can_create_sms_message_with_link_shortening_option</span>
+                <br/>
+                <span class="ignored-method-name">Verify_user_can_create_email_message_with_link_shortening_option</span>
+                <br/>
+                <span class="ignored-method-name">Verify_VCF_Card_Feature</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Branding_code_feature</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_trailing_slashes_should_work_properly_in_URLs_when_shortened</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_URLs_containing_hash_sign_should_work_properly_when_shortened</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.SegmentProfileDateTriggerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_user_can_compose_campaign_with_having_segment_and_apply_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_fire_when_user_add_member_to_the_segment_and_fire_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_when_user_remove_existing_member_from_the_segment_and_fire_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_create_segment_with_custom_and_standard_field</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_fire_when_user_add_member_to_the_segment_and_fire_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_to_member_not_in_the_segment_but_in_the_list</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_compose_campaign_with_having_segment_and_apply_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_when_user_remove_existing_member_from_segment_and_fire_profile_trigger</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudienceUpsertAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_standard_field_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_new_member_by_giving_client_member_id_with_app_member_id_in_a_request_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_email_id_in_request_body_and_response_code_should_be_400_and_and_error_message_Invalid_parameter_value_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_user_try_to_subscribe_member_in_sms_channel_with_phone_number_and_list_not_support_sms_channel</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_standard_fields_of_a_member_could_be_updated_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_is_unsubscribed_from_sms_channel_when_mobilephone_is_nulled_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_encrypted_custom_fields_of_a_member_could_be_updated_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_not_create_without_giving_any_identifier_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_email_id_in_the_request_body_the_response_code_should_be_400_and_error_message_Invalid_parameter_value_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_7_types_of_encrypted_custom_fields_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_list_id_missing_and_user_try_to_subscribe_member_in_sms_channel</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_in_email_pending_state_in_the_respective_list_and_get_confirm_opt_in_message_when_using_X_Ms_List_Confirm_header_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_user_try_to_add_member_with_email_and_list_not_support_email_channel</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_standard_and_custom_field_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_when_using_all_identifiers_in_a_single_request_if_one_or_more_identifiers_are_invalid_then_request_marked_as_failed_and_the_response_code_should_be_400_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_types_of_custom_field_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_is_unsubscribed_from_email_channel_when_email_is_nulled_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_in_sms_pending_state_in_the_respective_list_and_get_confirm_opt_in_message_when_using_X_Ms_List_Confirm_header_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_fails_if_no_auth_credentials_are_given_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_and_subscribed_in_email_channel_in_the_respective_list_and_get_welcome_message_when_using_Send_Welcome_Message_header_in_the_respective_list_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_both_standard_and_custom_fields_of_a_member_could_be_updated_in_a_single_request_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_mobilephone_in_request_body_and_response_code_should_be_400_and_and_error_message_Invalid_parameter_value_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_update_existing_member_identifier_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_custom_fields_of_a_member_could_be_updated_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_update_existing_member_subscription_using_Ignore_Error_For_Existing_Members_and_X_Ms_Force_Subscribe_Member_header_at_a_time_in_same_request_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_update_identifiers_and_profile_field_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_all_the_fields_of_member_including_identifiers_are_updated_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_fields_not_included_in_the_request_should_not_update_to_null_when_using_X_Ms_Update_included_fields_only_and_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_and_subscribed_in_sms_channel_in_the_respective_list_and_get_welcome_message_when_using_Send_Welcome_Message_header_in_the_respective_list_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_audience_API_data_writes_on_api_request_log_table_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_get_subscribed_in_the_respective_list_when_using_Force_Subscribe_Member_header_irrespective_of_there_current_subscription_status_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_should_create_by_giving_all_valid_identifiers_at_once_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_member_by_only_giving_valid_email_in_the_request_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_using_all_identifiers_in_a_single_request_and_if_one_or_more_identifiers_are_invalid_and_then_request_marked_as_failed_and_response_code_is_400</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_fields_not_included_in_the_request_are_updated_to_null_when_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_member_by_only_giving_the_valid_phone_number_in_the_request_using_X_Ms_Audience_Update_header_with_value_upsert</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Registration_data</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudiencePostAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_member_should_get_subscribed_in_the_respective_list_when_using_Force_Subscribe_Member_header_irrespective_of_there_current_subscription_status</span>
+                <br/>
+                <span class="ignored-method-name">Verify_uniqueness_on_identifiers_and_fail_if_not_unique_response_code_should_be_400</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_and_subscribed_in_email_channel_in_the_respective_list_and_get_welcome_message_when_using_Send_Welcome_Message_header_in_the_respective_list</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_standard_and_custom_field</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_in_email_pending_state_in_the_respective_list_and_get_confirm_opt_in_message_when_using_X_Ms_List_Confirm_header</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_new_member_by_only_giving_unique_app_member_id_in_a_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_in_sms_pending_state_in_the_respective_list_and_get_confirm_opt_in_message_when_using_X_Ms_List_Confirm_header</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_not_create_without_giving_any_identifier</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_types_of_custom_field</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_not_update_existing_member_subscription_if_not_using_Ignore_Error_For_Existing_Members_and_X_Ms_Force_Subscribe_Member_header_in_same_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_update_existing_member_subscription_using_Ignore_Error_For_Existing_Members_and_X_Ms_Force_Subscribe_Member_header_at_a_time_in_same_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_fails_if_no_auth_credentials_are_given</span>
+                <br/>
+                <span class="ignored-method-name">Verify_audience_API_data_writes_on_api_request_log_table</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_only_update_identifiers_but_not_any_profile_field_when_using_Ignore_Error_For_Existing_Members_header</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_resubscribe_existing_member_in_a_list_by_using_Ignore_Error_For_Existing_Members_header</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_member_by_only_giving_valid_email_in_the_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_subscribe_existing_member_in_a_list_by_using_Ignore_Error_For_Existing_Members_header</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_standard_field</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_user_try_to_subscribe_member_in_sms_channel_with_phone_number_and_list_not_support_sms_channel</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_member_by_only_giving_the_valid_phone_number_in_the_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_should_create_new_member_by_giving_client_member_id_with_app_member_id_in_a_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_cannot_update_existing_member_identifier_using_Ignore_Error_For_Existing_Members_header</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_should_create_by_giving_all_valid_identifiers_at_once</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_the_user_can_give_mapid_in_the_API_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_user_try_to_add_member_with_email_and_list_not_support_email_channel</span>
+                <br/>
+                <span class="ignored-method-name">Verify_error_response_when_list_id_missing_and_user_try_to_subscribe_member_in_sms_channel</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_email_id_in_the_request_body_the_response_code_should_be_400_and_error_message_Invalid_parameter_value</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_when_using_all_identifiers_in_a_single_request_if_one_or_more_identifiers_are_invalid_then_request_marked_as_failed_and_the_response_code_should_be_400</span>
+                <br/>
+                <span class="ignored-method-name">verify_that_member_can_be_created_with_all_7_types_of_encrypted_custom_fields</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_should_be_added_and_subscribed_in_sms_channel_in_the_respective_list_and_get_welcome_message_when_using_Send_Welcome_Message_header_in_the_respective_list</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.DeleteMemberAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Email_And_App_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Client_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Member_Can_Be_Deleted_By_App_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Phone_Number</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Member_Can_Be_Deleted_By_Phone_Number</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Client_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Member_Can_Be_Deleted_By_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Email</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Email</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Email_And_Client_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Email</span>
+                <br/>
+                <span class="ignored-method-name">VerifyDeletedMemberInfoInAudienceMemberDeletedDB</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Member_Can_Be_Deleted_By_Email</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Delete_Not_Existing_Member</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Delete_If_One_Of_Two_Member_Not_Exists</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_App_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Delete_Not_Existing_Two_Members</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_App_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID_And_App_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_App_Member_ID</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Member_Can_Be_Deleted_By_Client_Member_Id</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Phone_Number</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudienceReSubAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_member_must_get_in_pending_status_when_trying_to_re_subscribe_existing_unsubscription_member_for_email_channel_if_using_X_Ms_List_Confirm_true_and_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_get_error_message_if_trying_to_re_subscribe_existing_subscribed_member_in_same_list_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_re_subscribe_already_unsubscribed_member_in_a_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_get_error_message_if_trying_to_re_subscribe_existing_subscription_pending_member_in_same_list_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_re_subscribe_already_unsubscribed_member_in_a_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_subscribe_existing_member_for_first_time_in_a_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_re_subscribe_existing_unsubscribed_member_in_all_channel_in_one_request_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_welcome_message_when_trying_to_re_subscribe_existing_unsubscription_member_for_email_channel_if_using_Send_Welcome_Message_true_and_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_subscribe_existing_member_for_first_time_in_a_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_subscribe_existing_member_for_first_time_in_a_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_welcome_message_when_trying_to_re_subscribe_existing_unsubscription_member_for_sms_channel_if_using_Send_Welcome_Message_true_and_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_re_subscribe_already_unsubscribed_member_in_a_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_in_pending_status_when_trying_to_re_subscribe_existing_unsubscription_member_for_sms_channel_if_using_X_Ms_List_Confirm_true_and_X_Ms_Audience_Update_header_with_value_resub</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.EventUploadAPI_V2Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_user_get_External_MO_callback_in_json_when_user_reply_on_event_message</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_select_event_attribute_and_give_value_while_setting_custom_event_for_member_engagement_trigger_in_a_campaign</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_Custom_event_trigger_should_not_fire_when_attribute_value_not_same_as_in_event_trigger_using_evaluation_scope_with_rule</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_Custom_event_trigger_should_fire_for_evaluation_scope_with_rule</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_Custom_event_trigger_should_fire_for_evaluation_scope_all</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_if_custom_event_trigger_is_used_for_sms_message_and_fire_event_using_member_email_where_member_subscribe_in_sms_channel_message_should_fire_for_member</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_Custom_event_trigger_should_not_fire_if_required_attribute_is_missing</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_create_new_event_with_attribute_having_dynamic_value</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_event_upload_API_working_for_xml</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_select_event_callback_in_JSON</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_select_event_callback_in_XML</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_edit_existing_event_can_add_attributes_or_change_default_value</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_create_new_event_without_attributes</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_pending_or_unsubscribe_member_does_not_get_message_for_valid_event_fired_from_event_upload_api_v2</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_create_new_event_with_attributes_having_default_values</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_subscribed_member_get_message_for_valid_event_fired_from_event_upload_api_v2</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_use_newly_created_event_in_setting_custom_event_for_member_engagement_trigger_in_a_campaign</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_event_upload_API_is_working_for_more_than_5_members_in_single_request</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_update_event_callback_from_JSON_to_XML_or_XML_to_JSON</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_get_External_MO_callback_in_xml_when_user_reply_on_event_message</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_delete_event_if_used_in_any_active_campaign</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_Custom_event_trigger_should_work_for_dynamic_event_attribute</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.EnglishAndSpanishMTTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Ensure_user_is_receiving_MT_with_spanish_characters</span>
+                <br/>
+                <span class="ignored-method-name">Ensure_Message_API_is_working_with_dynamic_tag_for_english_content</span>
+                <br/>
+                <span class="ignored-method-name">Ensure_Direct_message_API_is_working</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Ensure_Message_API_with_spanish_content_is_working</span>
+                <br/>
+                <span class="ignored-method-name">Ensure_Message_API_is_working_with_english_content</span>
+                <br/>
+                <span class="ignored-method-name">Verify_sending_MO_with_160_and_more_characters_from_mo_hit_api</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudienceSubAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_subscribe_existing_member_in_new_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_in_pending_status_for_email_channel_if_using_X_Ms_List_Confirm_true_and_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_fails_if_no_auth_credentials_are_given_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_subscribe_existing_member_in_all_channel_in_one_request_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_X_Ms_Force_Subscribe_Member_header_should_not_force_subscribe_alredy_unsubscribed_member_in_list</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_in_pending_status_for_sms_channel_if_using_X_Ms_List_Confirm_true_and_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_subscribe_existing_member_in_new_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_welcome_message_for_email_channel_if_using_Send_Welcome_Message_true_and_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_subscribe_existing_member_in_new_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_must_get_welcome_message_for_sms_channel_if_using_Send_Welcome_Message_true_and_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_get_error_message_if_trying_to_subscribe_existing_subscribed_member_in_same_list_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.BaseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.MultiSegmentProfileDateTriggerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_when_user_remove_existing_member_from_the_composite_segment_and_fire_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_fire_when_user_add_member_to_the_composite_segment_and_fire_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_compose_campaign_with_having_composite_segment_and_apply_date_trigger</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_to_member_not_in_the_composite_segment_but_in_the_list</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_fire_when_user_add_member_to_the_composite_segment_and_fire_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_message_must_not_fire_when_user_remove_existing_member_from_composite_segment_and_fire_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_user_can_compose_campaign_with_having_multi_segment_and_apply_profile_trigger</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mPulse.testCases.AudienceUpdateAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_that_encrypted_custom_fields_of_a_member_could_be_updated_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_both_standard_and_custom_fields_of_a_member_could_be_updated_in_a_single_request_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_using_all_identifiers_in_a_single_request_and_if_one_or_more_identifiers_are_invalid_and_then_request_marked_as_failed_and_response_code_is_400</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_fields_not_included_in_the_request_are_updated_to_null_when_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_fields_not_included_in_the_request_should_not_update_to_null_when_using_X_Ms_Update_included_fields_only_header</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_all_the_fields_of_member_including_identifiers_are_updated_when_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">startSuite</span>
+                <br/>
+                <span class="ignored-method-name">startTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_is_unsubscribed_from_email_channel_when_email_is_nulled_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_standard_fields_of_a_member_could_be_updated_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_email_id_in_request_body_and_response_code_should_be_400_and_and_error_message_Invalid_parameter_value_when_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_fails_if_no_auth_credentials_are_given</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_for_invalid_mobilephone_in_request_body_and_response_code_should_be_400_and_and_error_message_Invalid_parameter_value_when_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_member_is_unsubscribed_from_sms_channel_when_mobilephone_is_nulled_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+                <span class="ignored-method-name">Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403</span>
+                <br/>
+                <span class="ignored-method-name">Verify_that_custom_fields_of_a_member_could_be_updated_using_X_Ms_Update_header_with_value_update</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SanitySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mPulse.testCases.DeleteMemberAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">startTest(chrome, org.testng.TestRunner@2cd76f31)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mPulse.testCases.AudienceUnSubAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startMethod(public void com.mPulse.testCases.AudienceUnSubAPITest.Verify_that_user_can_not_unsubscribe_existing_...)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endMethod([TestResult name=Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_chann...)</span>
+                <span class="method-start">15832 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mPulse.testCases.DeleteMemberAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest(chrome, org.testng.TestRunner@2cd76f31)</span>
+                <span class="method-start">15842 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endSuite</span>
+                <span class="method-start">15936 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

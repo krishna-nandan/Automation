@@ -1,0 +1,1429 @@
+<html>
+<head>
+<title>TestNG:  Test4</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test4</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/32</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 04 20:52:13 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (730 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>deleteAPI subapi </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.startTest()'><b>startTest</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method startTest but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1274370107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1274370107'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method startTest but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445544421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445544421'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487811606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487811606'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace364344154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace364344154'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394249958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394249958'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471596552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471596552'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1971673198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1971673198'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1717069460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1717069460'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1762941466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1762941466'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884376857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884376857'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613241542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1613241542'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1485626890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1485626890'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1805129137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1805129137'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1881572713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881572713'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439380813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439380813'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2021062703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2021062703'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217564316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace217564316'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace568596048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace568596048'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace580958628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace580958628'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace725818046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725818046'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497088192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497088192'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495890544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace495890544'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800554024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800554024'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1881699765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881699765'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605378427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605378427'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace413110291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413110291'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541413783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541413783'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2136376144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2136376144'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156344411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1156344411'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370001872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370001872'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789890620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789890620'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811080401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811080401'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.endMethod()'><b>endMethod</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace308717689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace308717689'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endMethod but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.endTest()'><b>endTest</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endTest but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177387313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177387313'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method endTest but has not been marked @Optional or defined
+in /home/krishna/mPulseWorkspace/msx.final/mobilestorm/QATesting/mPulseAutomation/src/test/resources/sanity_testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.VerifyDeletedMemberInfoInAudienceMemberDeletedDB()'><b>VerifyDeletedMemberInfoInAudienceMemberDeletedDB</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_API_request_fails_if_no_auth_credentials_are_given_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_API_request_fails_if_no_auth_credentials_are_given_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403()'><b>Verify_API_request_should_only_accessible_through_valid_basic_authorization_for_not_valid_authorization_response_code_should_be_403</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Delete_If_One_Of_Two_Member_Not_Exists()'><b>Verify_Delete_If_One_Of_Two_Member_Not_Exists</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Delete_Not_Existing_Member()'><b>Verify_Delete_Not_Existing_Member</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Delete_Not_Existing_Two_Members()'><b>Verify_Delete_Not_Existing_Two_Members</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Member_Can_Be_Deleted_By_App_Member_Id()'><b>Verify_Member_Can_Be_Deleted_By_App_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Member_Can_Be_Deleted_By_Client_Member_Id()'><b>Verify_Member_Can_Be_Deleted_By_Client_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Member_Can_Be_Deleted_By_Email()'><b>Verify_Member_Can_Be_Deleted_By_Email</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Member_Can_Be_Deleted_By_Member_Id()'><b>Verify_Member_Can_Be_Deleted_By_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Member_Can_Be_Deleted_By_Phone_Number()'><b>Verify_Member_Can_Be_Deleted_By_Phone_Number</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_App_Member_ID()'><b>Verify_Two_Members_Can_Be_Deleted_By_App_Member_ID</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID()'><b>Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID_And_App_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Client_Member_ID_And_App_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Email()'><b>Verify_Two_Members_Can_Be_Deleted_By_Email</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Email_And_App_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Email_And_App_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Email_And_Client_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Email_And_Client_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_App_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_App_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Client_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Client_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Email()'><b>Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Email</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Phone_Number()'><b>Verify_Two_Members_Can_Be_Deleted_By_Member_ID_and_Phone_Number</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_App_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_App_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Client_Member_Id()'><b>Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Client_Member_Id</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Email()'><b>Verify_Two_Members_Can_Be_Deleted_By_Mobile_Phone_And_Email</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.DeleteMemberAPITest.Verify_Two_Members_Can_Be_Deleted_By_Phone_Number()'><b>Verify_Two_Members_Can_Be_Deleted_By_Phone_Number</b><br>Test class: com.mPulse.testCases.DeleteMemberAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.DeleteMemberAPITest@57baeedf</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_not_re_subscribe_already_unsubscribed_member_in_a_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_subscribe_existing_member_in_all_channel_in_one_request_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_subscribe_existing_member_in_all_channel_in_one_request_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_subscribe_existing_member_in_new_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_subscribe_existing_member_in_new_list_in_appmail_channel_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_subscribe_existing_member_in_new_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_subscribe_existing_member_in_new_list_in_email_channel_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+<tr>
+<td title='com.mPulse.testCases.AudienceSubAPITest.Verify_that_user_can_subscribe_existing_member_in_new_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub()'><b>Verify_that_user_can_subscribe_existing_member_in_new_list_in_sms_channel_using_X_Ms_Audience_Update_header_with_value_sub</b><br>Test class: com.mPulse.testCases.AudienceSubAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mPulse.testCases.AudienceSubAPITest@343f4d3d</td></tr>
+</table><p>
+</body>
+</html>

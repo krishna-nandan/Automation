@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="286" total="287" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SanitySuite" duration-ms="15791" started-at="2019-11-19T08:09:56Z" finished-at="2019-11-19T08:10:12Z">
+    <groups>
+      <group name="unsubapi2">
+        <method signature="AudienceUnSubAPITest.Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub()[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f]" name="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub" class="com.mPulse.testCases.AudienceUnSubAPITest"/>
+      </group> <!-- unsubapi2 -->
+      <group name="sanity">
+        <method signature="AudienceUnSubAPITest.Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub()[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f]" name="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub" class="com.mPulse.testCases.AudienceUnSubAPITest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="DemoTest1" duration-ms="15791" started-at="2019-11-19T08:09:56Z" finished-at="2019-11-19T08:10:12Z">
+      <class name="com.mPulse.testCases.AudienceUnSubAPITest">
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f]" name="startMethod" is-config="true" duration-ms="164" started-at="2019-11-19T08:09:56Z" finished-at="2019-11-19T08:09:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mPulse.testCases.AudienceUnSubAPITest.Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub()[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f]" name="Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub" duration-ms="15590" started-at="2019-11-19T08:09:57Z" finished-at="2019-11-19T08:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub -->
+        <test-method status="PASS" signature="endMethod(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f]" name="endMethod" is-config="true" duration-ms="9" started-at="2019-11-19T08:10:12Z" finished-at="2019-11-19T08:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub status=SUCCESS method=AudienceUnSubAPITest.Verify_that_user_can_not_unsubscribe_existing_pending_member_in_sms_and_email_channel_using_X_Ms_Audience_Update_header_with_value_unsub()[pri:0, instance:com.mPulse.testCases.AudienceUnSubAPITest@46238e3f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMethod -->
+      </class> <!-- com.mPulse.testCases.AudienceUnSubAPITest -->
+      <class name="com.mPulse.testCases.DeleteMemberAPITest">
+        <test-method status="PASS" signature="startSuite()[pri:0, instance:com.mPulse.testCases.DeleteMemberAPITest@276438c9]" name="startSuite" is-config="true" duration-ms="46" started-at="2019-11-19T08:09:56Z" finished-at="2019-11-19T08:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSuite -->
+        <test-method status="PASS" signature="startTest(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.mPulse.testCases.DeleteMemberAPITest@276438c9]" name="startTest" is-config="true" duration-ms="7" started-at="2019-11-19T08:09:56Z" finished-at="2019-11-19T08:09:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2cd76f31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="endTest(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.mPulse.testCases.DeleteMemberAPITest@276438c9]" name="endTest" is-config="true" duration-ms="2" started-at="2019-11-19T08:10:12Z" finished-at="2019-11-19T08:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2cd76f31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.mPulse.testCases.DeleteMemberAPITest@276438c9]" name="endSuite" is-config="true" duration-ms="391" started-at="2019-11-19T08:10:12Z" finished-at="2019-11-19T08:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSuite -->
+      </class> <!-- com.mPulse.testCases.DeleteMemberAPITest -->
+    </test> <!-- DemoTest1 -->
+  </suite> <!-- SanitySuite -->
+</testng-results>

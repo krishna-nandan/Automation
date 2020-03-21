@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="1" name="TestOne(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.mPulse.extentTestBase.Test001P">
+        <methods>
+          <include name="endTest"/>
+          <include name="statrSuite"/>
+          <include name="endSuite"/>
+          <include name="statrTest"/>
+          <include name="test001"/>
+          <include name="endMethod"/>
+          <include name="statrMethod"/>
+        </methods>
+      </class> <!-- com.mPulse.extentTestBase.Test001P -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+</suite> <!-- Failed suite [Suite] -->

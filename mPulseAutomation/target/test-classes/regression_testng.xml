@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanitySuite" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.mPulse.listeners.AnnotationTransformer"></listener>
+	</listeners>
+    
+    	<test name="DemoTest1">
+		<parameter name="browser" value="chrome" />
+		<groups>
+			<run>
+				<include name="securemessagelink" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.mPulse.testCases" />
+		</packages>
+	</test>
+    
+</suite> <!-- Suite -->

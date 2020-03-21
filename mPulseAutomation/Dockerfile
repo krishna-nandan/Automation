@@ -19,11 +19,13 @@ RUN apt-get install -y maven
 # Install git on ubuntu-selenium image
 RUN apt-get install -y git
 
+WORKDIR "/DockerSelenium"
 # Get the repository onto the local system
-RUN git clone https://github.com/krishna-nandan/Automation.git
+RUN git clone https://krishna-nandan:Kanpur@up78@github.com/krishna-nandan/Automation.git
+
+RUN cd Automation/mPulseAutomation
 
 # Run the maven command to execute all the tests
-WORKDIR "/DockerSelenium"
-RUN mvn clean install test
+RUN mvn clean package -Dmaven.test.skip
 
 ENTRYPOINT ["/bin/bash"]

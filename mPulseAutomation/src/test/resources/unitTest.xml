@@ -6,7 +6,7 @@
 		<parameter name="browser" value="chrome" />
 		<groups>
 			<run>
-				<include name="unsubapi2" />				
+				<include name="sanity_krishna" />				
 			</run>
 		</groups>
 		<packages>

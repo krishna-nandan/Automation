@@ -1,7 +1,14 @@
+## New dockerfile
 # latest image from UBUNTU installed in the machine
 FROM ubuntu:latest
 
 MAINTAINER Krishna Nandan <krishnanandan@live.in>
+
+# git user name
+ARG git_username
+
+# git password
+ARG git_password
 
 # Update ubuntu system
 RUN apt-get update
@@ -20,7 +27,7 @@ RUN apt-get install -y maven
 RUN apt-get install -y git
 
 # Get the repository onto the local system
-RUN git clone https://github.com/krishna-nandan/Automation.git
+RUN git clone -b master-qa https://git_username:git_password@github.com/krishna-nandan/Automation.git
 
 WORKDIR "/Automation/mPulseAutomation"
 
